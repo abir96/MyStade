@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MyStade</string>
+    <string name="hint">
+        <font color="#ffffff" size="20"></font>
+    </string>
+    <string name="hint_name"><font color="#ffffff" size="15">Nom</font></string>
+    <string name="hint_prenom"><font color="#ffffff" size="15">Prénom</font></string>
+    <string name="hint_login"><font color="#ffffff" size="15">Utilisateur</font></string>
+    <string name="hint_mdp"><font color="#ffffff" size="15">Mot de passe</font></string>
+    <string name="hint_mdp2"><font color="#ffffff" size="15">Mot de passe confirmé</font></string>
+    <string name="hint_password"><font color="#ffffff" size="15">Mot de passe</font></string>
+</resources>

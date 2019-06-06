@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mystade.tranche"
+    >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="370dp"
+        android:layout_height="261dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/stade" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_weight="0.00"
+            android:background="@drawable/my_button"
+
+            android:fontFamily="serif"
+            android:text="Choix de la tranche"
+            android:textAlignment="textStart"
+            android:textColor="?attr/colorAccent"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <RadioGroup
+            android:id="@+id/trancheRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/tranche1ID"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+
+                android:text="1ère tranche" />
+
+            <RadioButton
+                android:id="@+id/tranche2ID"
+                android:layout_width="240dp"
+                android:layout_height="45dp"
+
+                android:text="2ème tranche" />
+
+            <RadioButton
+                android:id="@+id/tranche3ID"
+                android:layout_width="235dp"
+                android:layout_height="45dp"
+
+                android:text="3ème tranche" />
+
+
+        </RadioGroup>
+
+
+        <Button
+            android:id="@+id/suivantTrancheID"
+            android:layout_width="282dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40sp"
+            android:layout_marginTop="35sp"
+            android:layout_marginBottom="2sp"
+            android:background="@drawable/my_button"
+            android:text="Suivant"
+            android:textAlignment="center"
+            android:textColor="#004d00" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
